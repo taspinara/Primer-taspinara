@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding School Signup Form</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Coding School Signup Form</h1>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <h2>Signup for Our Coding School</h2>
+
+        <!-- Form -->
+        <form action="" method="post">
+            <!-- Wrapping the form inputs with a fieldset -->
+            <fieldset>
+                <legend>Sign up Details</legend>
+                <!-- Name Input -->
+                 <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" required placeholder="Enter your full name">
+                 </div>
+                <!-- Email Input -->
+                 <div>
+                    <label for="email">email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email">
+                 </div>
+                <!-- Telephone Input -->
+                 <div>
+                    <label for="telephone">Email Address</label>
+                    <input type="tel" name="telephone" id="telephone" required placeholder="Enter your phone number">
+                 </div>
+                <!-- Bootcamp Select -->
+                 <div>
+                    <label for="bootcamp">Choose a Bootcamp</label>
+                    <select name="bootcamp" id="bootcamp" required>
+                        <option value="">--Please select an option--</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="ui-ux">UI/UX Design</option>
+                        <option value="full-stack">Full-Stack Development</option>
+                    </select>
+                 </div>
+                 <!-- Submit Button -->
+                  <div>
+                    <button type="submit">Sign Up</button>
+                  </div>
+            </fieldset> 
+        </form>
+    </main>
+</body>
+</html>
