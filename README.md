@@ -14,4 +14,4 @@ The topics for this week are HTML and CSS.
 The topics for this week are Git and GitHub and recaps will be given on any topic necesary for the past week.
 
 
-Primer-test repository link -> https://github.com/mariblan/Primer-test
+Primer-Project repository link -> https://github.com/mariblan/Primer-test
