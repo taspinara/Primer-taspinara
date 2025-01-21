@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav, h1, header li, a {
+    text-align: center;
+    display: inline;
+    padding: 2rem;
+    height: 7rem;
+}
+
+section {
+    padding: 4rem;
+    margin-bottom: 4rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+    max-width: 80ch;
+}
+
+section ul {
+    list-style: none;
+}
+section ul li {
+    letter-spacing: .5px;
+    font-size: .8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #f00;
+}
+
+figure {
+    margin: 0 auto;
+    width: 100%;
+}
+
+figcaption {
+    font-size: .8rem;
+    
+}

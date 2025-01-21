@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dialog-box {
+    width: 30rem;
+    background-color: #c0c0c0;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-right: 3px solid rgb(70, 70, 70);
+    border-bottom: 3px solid rgb(70, 70, 70);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.dialog-header {
+    background: linear-gradient(to right, #0d479a, #9ab1d9);
+    color: white;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+.dialog-body {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.2rem;
+}
+
+.dialog-body p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+
+.dialog-footer {
+    padding: .5rem;
+    text-align: right;
+}
+
+.cancel-button {
+    font-size: 1.1rem;
+    margin: 0 1rem .9rem 0;
+    padding: .25rem .75rem;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
