@@ -7,22 +7,41 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #efefef;
+    line-height: 1.6;
 }
 
 header {
-    padding: 2rem 4rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem; 
     border-bottom: 5px solid tomato;
 }
 
 header h1 {
-    text-align: center;
+    font-size: 2rem;
     color: tomato;
 }
 
 header p {
-    margin: .8rem;
-    text-align: center;
+    margin: 1rem 0;
     font-size: 1.2rem;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to new rows */
+    gap: 2rem; /* Space between items */
+    justify-content: space-evenly; /* Center content horizontally */
+    margin: 2rem 0;
+}
+
+.image-grid figure {
+    flex: 1 1 calc(33% - 1rem); /* Flexible width with space for gaps */
+    max-width: calc(30% - 1rem); /* Prevent items from growing too large */
+    text-align: center; /* Center captions below images */
+    box-sizing: border-box; /* Ensures padding and border are included in size */
 }
 
 main {
@@ -36,7 +55,6 @@ main section {
 section p {
     max-width: 80ch;
     font-size: 1rem;
-    letter-spacing: .5px;
 }
 
 section li {
@@ -45,12 +63,112 @@ section li {
     letter-spacing: .5px;
 }
 
+/************************** Contact Form style start *******************************/
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form input, form textarea {
+    width: 30%;
+    padding: .8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: tomato;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: darkred;
+}
 
 /* Footer styles */
 footer {
-    background-color: #333333;
+    background-color: #333;
     /* Very dark gray, almost black */
     color: white;
     text-align: center;
-    padding: 20px 40px;
+    padding: 1.5rem 2.5rem;
+}
+
+/* Styles for small screens (e.g., smartphones) */
+@media (max-width: 600px) {
+    body {
+        font-size: 90%;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        margin: 1rem;
+    }
+
+    section p {
+        font-size: .9rem;
+    }
+    #galery {
+        margin: 0 auto;
+    }
+
+    .image-grid figure {
+        flex: 1 1 calc(90% - 1rem); /* Adjust to 2 columns on small screens */
+        max-width: calc(80% - 1rem);
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: .5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    .image-grid figure {
+        flex: 1 1 calc(50% - 1rem); /* Adjust to 3 columns on medium screens */
+        max-width: calc(50% - 1rem);
+    }
+
+    #contact {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    form input, form textarea {
+        width: 100%; 
+    }
+
+    button {
+        width: 100%;
+        padding: .6rem;
+    }
 }
