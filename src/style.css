@@ -219,6 +219,12 @@ footer {
     padding: 0.5rem 1rem;
 }
 
+.logo-footer {
+    margin-left: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
 .social-media {
     display: flex;
     align-items: center;
