@@ -1,0 +1,11 @@
+.success{
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #06a022;
+}
+
+.error {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: red;
+}  
